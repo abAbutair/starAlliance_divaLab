@@ -1,0 +1,495 @@
+* {
+    outline: 0 !important;
+}
+a:hover {
+    text-decoration: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin-#{$left}:0;
+    background-color: $black;
+    background-image: url("../images/img-noise-300x300.png");
+    color: $bodyColor;
+    font-family: $bodyFont;
+    @include transition(all);
+}
+/* general theme */
+/*
+body{
+    background-color: #fff;
+    height: .25rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    width: 0%;
+}*/
+
+.btn {
+    min-width: 10rem;
+    height: 2.5rem;
+    background: linear-gradient($lightGray, $gray);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    @include border-radius(0);
+    span{
+        display: block;
+        @include translate(0, 0);
+        @include transition(all);
+    }
+    &:before{
+        font-family: "Font Awesome 5 Free";
+        width: 100%;
+        height: 100%;
+        color: inherit;
+        line-height: 2.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include translate(0, -2rem);
+        @include transition(all);
+    }
+
+    &:hover{
+        span{
+            @include translate(0, 2rem)
+        }
+        &:before{
+            @include translate(0,0)
+        }
+    }
+    &:focus, &:visited {
+        box-shadow: none;
+    }
+}
+
+.section {
+    padding: $secPadding;
+}
+
+
+.wrap {
+    background-image: url("../images/img-noise-300x300.png");
+    background-color: $black;
+    opacity: 0;
+    @include slow(all);
+    &.show_error {
+        padding-top: 5rem;
+        header{
+            margin-top: 5rem;
+            @include slow(all);
+        }
+    }
+    main {
+        height: 100vh;
+    }
+}
+
+.vh{
+    height: 100vh !important;
+}
+.overflow {
+    overflow: hidden;
+}
+section.main{
+    height: auto;
+}
+
+
+section:not(.main){
+    padding-top: 4.375rem;
+}
+input:required {
+  box-shadow: none !important;
+}
+.form-control{
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.content{
+    padding-bottom: 30px;
+}
+.btn:hover {
+    box-shadow: none;
+}
+
+
+.content{
+    background-image: url('../images/map-bg.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.check{
+    text-align: $left;
+    padding-bottom: 0.375rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    > input {
+        display: none;
+        + label {
+            cursor: pointer;
+            &:before{
+                content: '\f0c8 ';
+                font-family: "Font Awesome 5 Free";
+                font-size: 1.125rem;
+                margin-#{$right}:8px;
+                width: 1rem;
+                display: inline-block;
+            }
+        }
+        &:checked{
+            + label{
+                &:before{
+                    content: '\f14a';
+                }
+            }
+        }
+    }
+}
+
+.radio {
+    padding-#{$right}: 12px;
+    label{
+        cursor: pointer;
+        padding-#{$left}: 1.25rem;
+        position: relative;
+        &:before{
+            content: '\f111';
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            #{$left}: 0;
+        }
+    }
+    input:checked + label:before {
+        content: '\f192';
+    }
+}
+
+/* range slider */
+.ui-slider{
+    height: 0.4rem;
+    background-color: #adadad;
+    bottom: 0;
+    border:none;
+    @include border-radius(0.5rem);
+    .ui-slider-range {
+        background-color: $black;
+    }
+    .ui-slider-handle{
+        background-color: $darkColor;
+        border: 2px $white solid;
+        top: -.4rem;
+        cursor: pointer;
+        @include border-radius(50%)
+    }
+}
+.min, .max{
+    max-width: 50%;
+    input{
+        width: 100%;
+        border: none;
+        margin-bottom: 0.5rem;
+        background-color: transparent;
+    }
+}
+.min {
+    float: $left;
+    input{
+        text-align: $left;
+    }
+}
+.max{
+    float: $right;
+    input{
+        text-align: $right;
+    }
+}
+
+.ui-slider-horizontal {
+    height: 0.375rem;
+    background: #D7D7D7;
+    border: 1px solid #BABABA;
+    box-shadow: 0 1px 0 #FFF, 0 1px 0 #CFCFCF inset;
+    clear: both;
+    margin: 0.625rem 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+.ui-slider a:focus {
+    outline:none;
+}
+
+
+/* custom select style */
+.sel {
+    cursor: pointer;
+    &:before, &:after{
+        position: absolute;
+        font-family: "Font Awesome\ 5 Free";
+        font-weight: 900;
+        right: 0.5rem;
+        font-size: 0.75rem;
+    }
+    &:before{
+        content: '\f0de';
+        line-height: 20px;
+    }
+    &:after{
+        content: '\f0dd';
+        line-height: 22px;
+    }
+}
+
+.sel__placeholder {
+    pointer-events: none;
+    user-select: none;
+    visibility: visible;
+    &:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: .375rem .75rem;
+        content: attr(data-placeholder);
+        visibility: hidden;
+    }
+}
+
+.sel.active .sel__placeholder {
+    visibility: hidden;
+}
+
+
+.sel.active .sel__placeholder::before {
+    visibility: visible;
+}
+
+.sel__box {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: -4px;
+    display: none;
+    list-style-type: none;
+    text-align: left;
+    font-size: 1em;
+    background-color: $black;
+    width: calc(100% + 8px);
+    box-sizing: border-box;
+    z-index: 9;
+}
+
+.sel.active .sel__box {
+    display: block;
+    animation: fadeInUp 500ms;
+}
+
+.sel__box__options {
+    display: list-item;
+    padding: 0.5em 1em;
+    user-select: none;
+}
+
+.sel__box__options::after {
+    content: '\f00c';
+    font-family: '"Font Awesome 5 Free"';
+    font-size: 0.5em;
+    margin-left: 5px;
+    display: none;
+}
+
+.sel__box__options.selected::after {
+    display: inline;
+}
+
+.sel__box__options:hover {
+    background-color: lighten($black, 5%);
+}
+
+/* ----- Select Box Black Panther ----- */
+.sel {
+    position: relative;
+    padding: .375rem .75rem;
+    border-bottom: 1px $apiColor solid;
+}
+
+/* ----- Select Box Superman ----- */
+.sel--superman {
+    /*   display: none; */
+}
+
+
+.content{
+    padding-bottom: 30px;
+}
+
+
+
+//---------------- collapse style --------
+.card{
+    padding: 0 20px;
+    border-radius: 0;
+    border: 0;
+    margin: 1px 0;
+    @include transition(margin);
+    .collapsed{
+        .fa-minus{
+            &:before{
+                content: '\f067';
+            }
+        }
+    }
+    .card-header{
+        padding: 0;
+        .btn{
+            width: 100%;
+            background: $white;
+            padding: 15px;
+            height: auto;
+            text-align: $left;
+            position: relative;
+            &:hover{
+                box-shadow: none;
+                span{
+                    webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+                    transform: none;
+                }
+            }
+            span{
+                margin: 0;
+                display: inline-block;
+                font-size: 16px;
+                color: #616161;
+                text-transform: capitalize;
+            }
+            i{
+                color: #616161;
+                font-size: 0.875rem;
+                margin-top: 5px;
+                position: absolute;
+                #{$right}: 10px;
+            }
+        }
+    }
+    .divider-border{
+        .define-para{
+            font-size: $smallSize;
+        }
+        input, select{
+            border: none;
+            border-bottom: 1px solid #000;
+            border-radius: 0;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            color: $darkColor;
+            font-size: $midSize;
+            option{
+                color: $darkColor;
+                font-size: $midSize;
+                text-transform: capitalize;
+            }
+            &::placeholder{
+                color: $darkColor;
+                font-size: $midSize;
+                text-transform: capitalize;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .mobile-number{
+            display: flex;
+            select{
+                -moz-appearance: window;
+                -webkit-appearance: none;
+                width: 20%;
+                font-size: $midSize;
+                option{
+                    background: $white;
+                    color: $darkColor;
+                    font-size: $midSize;
+                }
+            }
+            input{
+                width: 80%;
+            }
+        }
+        .save-btn{
+            text-align: $right;
+            margin: 1rem 0;
+            button{
+                min-width: auto;
+                height: auto;
+                background: transparent;
+                font-size: $midSize;
+                text-transform: capitalize;
+                border-bottom: 1px solid #333;
+                color: $darkColor;
+                padding: 0;
+                &[type='button']{
+                    margin-#{$left}:1rem;
+                }
+            }
+        }
+        .form-check{
+            padding: 0;
+            .form-check-input{
+                display: none;
+            }
+            .form-check-label{
+                color: $darkColor;
+                font-size: $midSize;
+                margin-bottom: 15px;}
+        }
+        .nav-pills{
+            padding: 1rem 0 2rem;
+            border-top: 1px solid #dcdcdc;
+            margin: 2rem 0 0!important;
+            .nav-item{
+                width: calc(100% / 3);
+                text-align: center;
+                .nav-link{
+                    color: #666;
+                    text-transform: capitalize;
+                }
+                .nav-link.active{
+                    background-color: #dee2e6;
+                    color: $darkGray;
+                    border-bottom: 1px solid $darkGray;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    //----my profile card open------------
+    &.active-card{
+        margin: 20px -30px !important;
+        box-shadow: 0 0 30px 3px rgba(255, 255, 255, 0.3);
+        .card-header{
+            .btn-link{
+                pointer-events: none;
+
+            }
+        }
+    }
+}
+
+.el-font{
+    font-size: $midSize;
+    color: $darkGray;
+    ol, ul{
+        padding-#{$left}: 1.25rem;
+    }
+}
+

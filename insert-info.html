@@ -1,0 +1,661 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- IE compatipility Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Resposive Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- keywords Meta-->
+    <meta name="keywords" content="">
+
+    <!-- description Meta-->
+    <meta name="description" content="">
+
+    <!--Author Meta-->
+    <meta name="author" content="Diva-lab">
+    <!--
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.datePicker.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style_ltr.css">
+
+
+    <title>star alliance tour</title>
+    <link rel="icon" href="images/"/>
+</head>
+
+<body>
+<header class="auto_hide">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-align-right"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-capitalize" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index2.html"  data-type="page-transition">flights <span class="sr-only">
+                            (current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">my booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">my account</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="lang">En</span>|<span class="currency text-uppercase">Egp</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<main class="temp">
+    <!-- bannar -->
+    <section class="city_img insert-sty filter-mr-remove" style="background-image: url('media/city_bannar.jpg')">
+        <div class="container">
+            <div class="main_info main_info_res">
+                <div class="flight-direction">
+                    <div>
+                        <p class="">cairo</p>
+                        <p class="">london</p>
+                    </div>
+                </div>
+                <div class="flight-info">
+                    <p>12-06-2018 , 30-07-2018 </p>
+                    <p>2 Adult, 1 Child</p>
+                    <p>Economy</p>
+                </div>
+            </div>
+            <a href="index.html" data-target="#api_modal" data-toggle="modal" class="underline modify-search"><i class="fas fa-search"></i><span>Modify search</span></a>
+        </div><!-- / end contianer -->
+    </section>
+    <!-- / end bannar section -->
+
+    <div class="content insert-content">
+        <div class="container">
+            <div class="collapse-opt">
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="calendar">
+                        </div>
+                        <!-- flights results -->
+                        <div class="flights_result">
+                            <div class="flight">
+                                <div class="flight_header">
+                                    <img src="media/air-asia.png" alt=""/>
+                                    <div class="">
+                                        <span>non-refundable</span>
+                                        <span>economy</span>
+                                        <span>nearby airport</span>
+                                    </div>
+                                </div>
+                                <div class="flight_content">
+                                    <div class="trip"> <!-- departure trip -->
+                                        <div class="airports">
+                                            <div class="from_to">
+                                                <p>
+                                                    <span>cairo</span>
+                                                    <span class="text-uppercase">(cai)</span>
+                                                </p>
+                                                <p class="small">Cairo International Airport </p>
+                                            </div>
+                                            <div class="seats">
+                                                <i class="fas fa-plane"></i>
+                                                <span class="small">7 seats left</span>
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="from_to">
+                                                <p>
+                                                    <span>london</span>
+                                                    <span class="text-uppercase">(lhr)</span>
+                                                </p>
+                                                <p class="small">London City Airport </p>
+                                            </div>
+                                        </div>
+                                        <div class="trip_times">
+                                            <div class="time">
+                                                <span class="at">06:13</span>
+                                                <span class="on small text-capitalize">27 <br> mar</span>
+                                            </div>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                            <div class="time">
+                                                <span class="at">06:13</span>
+                                                <span class="on small text-capitalize">27 <br> mar</span>
+                                            </div>
+                                        </div>
+                                        <div class="duration">
+                                            <span>10h 25m</span>
+                                            <span>non-stop</span>
+                                        </div>
+                                        <div class="pieces ">
+                                            <span><i class="fas fa-briefcase"></i> 2 pieces | 1 Adlut</span>
+                                            <span><i class="fas fa-briefcase"></i> 1 pieces | 1 infant</span>
+                                        </div>
+                                    </div>
+                                    <div class="trip"><!-- arrival -->
+                                        <div class="airports">
+                                            <div class="from_to">
+                                                <p>
+                                                    <span>cairo</span>
+                                                    <span class="text-uppercase">(cai)</span>
+                                                </p>
+                                                <p class="small">Cairo International Airport </p>
+                                            </div>
+                                            <div class="seats">
+                                                <i class="fas fa-plane"></i>
+                                                <span class="small">7 seats left</span>
+                                                <div class="line"></div>
+                                            </div>
+                                            <div class="from_to">
+                                                <p>
+                                                    <span>london</span>
+                                                    <span class="text-uppercase">(lhr)</span>
+                                                </p>
+                                                <p class="small">London City Airport </p>
+                                            </div>
+                                        </div>
+                                        <div class="trip_times">
+                                            <div class="time">
+                                                <span class="at">06:13</span>
+                                                <span class="on small text-capitalize">27 <br> mar</span>
+                                            </div>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                            <div class="time">
+                                                <span class="at">06:13</span>
+                                                <span class="on small text-capitalize">27 <br> mar</span>
+                                            </div>
+                                        </div>
+                                        <div class="duration small">
+                                            <span>10h 25m</span>
+                                            <span>non-stop</span>
+                                        </div>
+                                        <div class="pieces small">
+                                            <span><i class="fas fa-briefcase"></i> 2 pieces | 1 Adlut</span>
+                                            <span><i class="fas fa-briefcase"></i> 1 pieces | 1 infant</span>
+                                        </div>
+                                    </div>
+                                    <div class="book">
+                                        <p>
+                                            <span class="price">564</span>
+                                            <span class="currency text-uppercase">usd</span>
+                                        </p>
+                                        <a href="#" class="show_stops" rel="popover" data-placement="left" data-popover-content="#stops_1">View Details</a>
+                                        <! -- flight stops -- >
+                                        <div class="stops d-none" id="stops_1">
+                                            <div class="trip">
+                                                <div class="airports">
+                                                    <div class="from_to">
+                                                        <p>
+                                                            <span>cairo</span>
+                                                            <span class="text-uppercase">(cai)</span>
+                                                        </p>
+                                                        <p class="small">Cairo International Airport </p>
+                                                    </div>
+                                                    <div class="seats">
+                                                        <i class="fas fa-plane"></i>
+                                                        <div class="line"></div>
+                                                    </div>
+                                                    <div class="from_to">
+                                                        <p>
+                                                            <span>london</span>
+                                                            <span class="text-uppercase">(lhr)</span>
+                                                        </p>
+                                                        <p class="small">London City Airport </p>
+                                                    </div>
+                                                </div>
+                                                <div class="trip_times">
+                                                    <div class="time">
+                                                        <span class="at">06:13</span>
+                                                        <span class="on small text-capitalize">27 <br> mar</span>
+                                                    </div>
+                                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                                    <div class="time">
+                                                        <span class="at">06:13</span>
+                                                        <span class="on small text-capitalize">27 <br> mar</span>
+                                                    </div>
+                                                </div>
+                                                <div class="duration small">
+                                                    <span>10h 25m</span>
+                                                    <span>non-stop</span>
+                                                </div>
+                                                <div class="pieces small">
+                                                    <span><i class="fas fa-briefcase"></i> 2 pieces | 1 Adlut</span>
+                                                    <span><i class="fas fa-briefcase"></i> 1 pieces | 1 infant</span>
+                                                </div>
+                                            </div>
+                                            <div class="layover">
+                                                <i class="far fa-clock"></i>
+                                                Layover : <span>22 hrs 45 mins</span>, <span>Zurich</span>
+                                            </div>
+                                            <div class="trip">
+                                                <div class="airports">
+                                                    <div class="from_to">
+                                                        <p>
+                                                            <span>cairo</span>
+                                                            <span class="text-uppercase">(cai)</span>
+                                                        </p>
+                                                        <p class="small">Cairo International Airport </p>
+                                                    </div>
+                                                    <div class="seats">
+                                                        <i class="fas fa-plane"></i>
+                                                        <div class="line"></div>
+                                                    </div>
+                                                    <div class="from_to">
+                                                        <p>
+                                                            <span>london</span>
+                                                            <span class="text-uppercase">(lhr)</span>
+                                                        </p>
+                                                        <p class="small">London City Airport </p>
+                                                    </div>
+                                                </div>
+                                                <div class="trip_times">
+                                                    <div class="time">
+                                                        <span class="at">06:13</span>
+                                                        <span class="on small text-capitalize">27 <br> mar</span>
+                                                    </div>
+                                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                                    <div class="time">
+                                                        <span class="at">06:13</span>
+                                                        <span class="on small text-capitalize">27 <br> mar</span>
+                                                    </div>
+                                                </div>
+                                                <div class="duration small">
+                                                    <span>10h 25m</span>
+                                                    <span>non-stop</span>
+                                                </div>
+                                                <div class="pieces small">
+                                                    <span><i class="fas fa-briefcase"></i> 2 pieces | 1 Adlut</span>
+                                                    <span><i class="fas fa-briefcase"></i> 1 pieces | 1 infant</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- flight content -->
+                            </div><!-- / end flight -->
+                        </div><!-- / end flight result -->
+                    </div>
+                </div>
+                <p>
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                </p>
+            </div><!-- END collapse-opt -->
+
+            <div class="info-insertation">
+                <div class="container">
+                    <p class="ensure-p">Please ensure that your details are entered exactly as they appear on your passport
+                        For uninterrupted service, Please ensure that your email address and mobile number is correct and reachable
+                    </p>
+                    <form >
+                        <div class="row insert-content">
+                            <div class="col-lg-7">
+                                <div class="traveler-forms">
+                                    <div class="travelers_info">
+                                        <div class="single_traveler active" id="traveler1">
+                                            <p class="traveler-sp">
+                                                Traveler <span id="num"></span>: <span>Adult</span> <span class="age-st">(Age Group 12 years and above)</span>
+                                            </p>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="first name*" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="last name*" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mobile-number">
+                                                            <div class="sel sel--black-panther">
+                                                                <select>
+                                                                    <option>+ 20</option>
+                                                                    <option>+ 21</option>
+                                                                    <option>+ 22</option>
+                                                                </select>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="mobile number*" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="email" class="form-control" placeholder="email*" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="form-control single_date bdate" type="text" value="" placeholder="date of birth">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="sel sel--black-panther">
+                                                                    <select class="custom-select">
+                                                                        <option selected>gender*</option>
+                                                                        <option value="1">male</option>
+                                                                        <option value="2">female</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input type="text" class="form-control" placeholder="bags*">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="passport number*">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="sel sel--black-panther">
+                                                            <select class="custom-select">
+                                                                <option selected>issuing country*</option>
+                                                                <option value="1">paris</option>
+                                                                <option value="2">stockholm</option>
+                                                                <option value="2">berlin</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="form-control single_date exp" type="text" value="" placeholder="expiry date*">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="sel sel--black-panther">
+                                                            <select class="custom-select">
+                                                                <option selected>meal prefrence*</option>
+                                                                <option value="1">meat</option>
+                                                                <option value="2">chicken</option>
+                                                                <option value="2">fish</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="sel sel--black-panther">
+                                                            <select class="custom-select">
+                                                                <option selected>special service*</option>
+                                                                <option value="1">meat</option>
+                                                                <option value="2">chicken</option>
+                                                                <option value="2">fish</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <p>Or insert ID in the loyalty program offered by an airline</p>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="frequent flyer number*">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_traveler  " id="traveler2">
+                                            <p class="traveler-sp">
+                                                Traveler <span id="num"></span>: <span>Adult</span> <span class="age-st">(Age Group 12 years and above)</span>
+                                            </p>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="first name*">
+                                                        <div class="valid-tooltip">
+                                                            Looks good!
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="last name*">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mobile-number">
+                                                            <div class="sel sel--black-panther">
+                                                                <select>
+                                                                    <option>+ 20</option>
+                                                                    <option>+ 21</option>
+                                                                    <option>+ 22</option>
+                                                                </select>
+                                                            </div>
+                                                            <input type="text" class="form-control" placeholder="mobile number*">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="email" class="form-control" placeholder="email*">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="form-control single_date bdate" type="text" value="" placeholder="date of birth">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="sel sel--black-panther">
+                                                                    <select class="custom-select">
+                                                                        <option selected>gender*</option>
+                                                                        <option value="1">male</option>
+                                                                        <option value="2">female</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input type="text" class="form-control" placeholder="bags*">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="passport number*">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="sel sel--black-panther">
+                                                            <select class="custom-select">
+                                                                <option selected>issuing country*</option>
+                                                                <option value="1">paris</option>
+                                                                <option value="2">stockholm</option>
+                                                                <option value="2">berlin</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input class="form-control single_date exp" type="text" value="" placeholder="expiry date*">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="sel sel--black-panther">
+                                                            <select class="custom-select">
+                                                                <option selected>meal prefrence*</option>
+                                                                <option value="1">meat</option>
+                                                                <option value="2">chicken</option>
+                                                                <option value="2">fish</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="sel sel--black-panther">
+                                                            <select class="custom-select">
+                                                                <option selected>special service*</option>
+                                                                <option value="1">meat</option>
+                                                                <option value="2">chicken</option>
+                                                                <option value="2">fish</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider-border">
+                                                <div class="row">
+                                                    <p>Or insert ID in the loyalty program offered by an airline</p>
+                                                    <div class="col-md-6">
+                                                        <input type="text" class="form-control" placeholder="frequent flyer number*">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- prev / next -->
+                                    <div class="divider-border clearfix">
+                                        <button type="button" class="previous-ar_nxt" id="prevTraveler"><i class="fas fa-angle-left"></i>previous</button>
+                                        <button type="button" class="next-ar_prev" id="nextTraveler"><i class="fas fa-angle-right"></i>next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 review-terms">
+                                <h3>Review the terms of your booking</h3>
+                                <article>
+                                    <p>Fares are not guaranteed until ticketed
+                                        Check your spellings, Flight passenger names must match government-issued photo ID exactly</p>
+
+                                    <p>Be sure you have all necessary and VALID documentations for the countries you are travelling to (and through!) (e.g passport, visa, transit permit, immunisation)
+                                        For uninterrupted service, Please ensure that your email address and mobile number is correct and reachable
+                                        Altayyar group will not responsible for any issue related to required travel documents, spell mistakes, rules or conditions.</p>
+
+                                    <p>By selecting to continue this booking, I acknowledge that I have read and accept all terms in the following links</p>
+                                </article>
+                                <p class="hand-point"><i class="far fa-hand-point-right"></i> <a href="#">flight rules & restrictions</a></p>
+                                <p class="hand-point"><i class="far fa-hand-point-right"></i> <a href="#">site policy</a></p>
+                                <p class="hand-point"><i class="far fa-hand-point-right"></i> <a href="#">regulations and conditions</a></p>
+                                <div class="form-check check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        I agree Terms, Data Policy & Cookie Policy. You may receive SMS notifications from us.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn">continue</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!-- / container -->
+    </div><!-- /content -->
+
+
+
+    <!-- ************************************************* -->
+    <!-- newsletters -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="line">
+                        <i class="far fa-envelope"></i>
+                        <input type="text" class="" placeholder="Subscribe to newsletter to keep up to date">
+                        <button class="btn icon_btn" type="button">
+                            <i class="fab fa-telegram-plane"></i> Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="f_nav list-unstyled text-capitalize">
+                        <li>
+                            <a href="#">about us</a>
+                        </li>
+                        <li>
+                            <a href="#">contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">rewards</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/logo.png" alt="">
+                    <ul class="list-inline list-unstyled socila_media">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-google-plus-g"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyrights text-center">
+                    <p>Copyright © 2018 | Star Alliance Tour<br>
+                        Powered By <a href=""> Diva-lab </a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+
+
+
+
+
+
+<!-- ****** JavaScript ****** -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment-with-locales.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/select_style.js"></script>
+
+<script type="text/javascript" src="js/jquery.datePicker.js"></script>
+
+<script type="text/javascript" src="js/rangeslider.js"></script>
+
+<script src="js/auto-hide.js"></script>
+<script src="js/scripts.js"></script>
+
+
+
+</body>
+</html>
+

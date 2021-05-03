@@ -1,0 +1,823 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1366px) {
+    header{
+        padding: 1.5rem;
+        .navbar{
+            padding: 0;
+        }
+        .navbar-brand{
+            img{max-height: 4rem}
+        }
+        .navbar-collapse{
+            padding: 1rem 0;
+        }
+    }
+    .main{
+        .api{
+            width: 32rem;
+            height: 32rem;
+            .flight_tybe{
+                .radio{
+                    label{
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+            .forms{
+                form {
+                    padding: 1rem 2rem;
+                    font-size: 0.75rem;
+                    .flight_destinations{
+                        display: flex;
+                        .form-group {
+                            width: 50%;
+                            &.checkboxes {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .form-control{
+                        padding: 0.375rem 0.5rem;
+                        font-size: 0.75rem;
+                    }
+                    .passengers{
+                        .col {
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                        }
+                  }
+                }
+                .class{
+                    >label{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .filtration ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li.list-inline-item{
+            //padding: 0.4rem 1.5rem;
+            font-size: 0.775rem;
+        }
+    }
+}
+    // Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+    //--------news-letter,footer---------
+    footer .socila_media li{
+        margin-right:0;
+    }
+    //-----------------------internals--------------------------
+    //--profile-------
+    .profile-page .content .tab-content .security input{
+        width: 50%;
+    }
+    //--search-result------
+    .calendar-container .range-calendar .calendar{
+        display: flex;
+    }
+    .flights_result .flight .flight_content .book{
+        padding-#{$left}: 1rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+    .show_nav{
+        margin-#{$left}:-50%;
+        @include transition(all);
+        header{
+            left: -50%;
+            position: absolute;
+            @include transition(all);
+        }
+        .navbar-collapse{
+            left: 50%;
+        }
+    }
+    .auto_hide.is-hidden {
+        @include translate(0,0)
+    }
+    //.collapse:not(.show){
+    //    display: block ;
+    //}
+    .navbar-collapse {
+        position: fixed;
+        width: 50%;
+        background: $darkGray;
+        height: 100vh !important;
+        .nav-item{
+            line-height: 2.5rem;
+            border-bottom: 1px solid #333;
+        }
+    }
+    //--------news-letter,footer---------
+    .newsletter{
+        i{
+            font-size: 1.1rem;
+        }
+        input{
+            width: calc(100% - 7rem);
+            &::placeholder{
+               font-size: 0.875rem;
+            }
+        }
+        .icon_btn{
+            font-size: 0.875rem;
+        }
+    }
+    //-----------------------internals--------------------------
+    //--city-us--------
+    .city_page_head .container h1 ,.discover-proceed-head h1{
+                width: 100%;
+                margin: 8.5rem auto 2.5rem;
+                font-size: 2rem;
+    }
+    .city_page_head .container p, .discover-proceed-head p{
+        width: 75%;
+        margin: 1.5rem auto;
+    }
+    //--contact-us--------
+    .contact-us{
+        .single-contact{
+            margin-bottom: 40px;
+        }
+    }
+    .map{
+        padding-top: 0 !important;
+    }
+    //--discover--------
+    .discover-wrap {
+      .places-pic-right{
+          .row{
+              .place-pic{
+                  margin-left: 0;
+                  padding-left: 0;
+                  max-height: 350px;
+                img{
+                      position: relative;
+                      left: 50%;
+                      transform: translateX(-50%);
+                  }
+              }
+          }
+      }
+    }
+    //--forgot-password------
+    .forgot-password{
+        width: 80%;
+        input{
+            width: 80%;
+        }
+    }
+    //--terms-of-use---
+    .terms-of-use{
+        display: none;
+    }
+    .terms-of-use-content{
+        margin-left: 0;
+    }
+    //--profile-------
+    .main_info{
+        width: 100%;
+        margin-left: 0;
+    }
+    .profile_content{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .sort{
+        width: 100%;
+        top: 100%;
+        left: 0;
+        .sort_by{
+            display: none;
+        }
+        .nav{
+            justify-content: space-around;
+        }
+        .sort_item{
+            width: auto;
+            display: inline-block;
+        }
+    }
+    .profile-page .content{
+        padding-top: 90px;
+    }
+    .card.active-card{
+        margin: 10px 7px !important;
+    }
+    .main_info{
+        > div{
+            width: 100%;
+        }
+    }
+    //--thank-you------
+    .thank-you-align .thank-you-wrap{
+        padding: 1.7rem;
+        .float-bio {
+            .thank-you-bio{
+                margin-bottom: 25px;
+                h1{
+                    font-size: 2rem;
+                }
+                h4{
+                    font-size: 0.875rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+            .con-with-us p{
+                font-size: 0.75rem;
+            }
+        }
+        .approved-payment{
+            right: 2%;
+            top: -12%;
+            min-width: 285px;
+            img{
+                margin: 25px auto;
+            }
+            h4{
+                font-size: 0.75rem;
+                margin-bottom: 1rem;
+            }
+            .payment-details{
+                font-size: 0.75rem;
+            }
+            .total-due{
+                margin: 20px 0;
+                padding: 8px 0;
+            }
+        }
+    }
+    //--main_info-------
+    .city_img > .container > a{
+        top: calc(100% - 15px);
+        text-decoration: none;
+        padding: 0;
+        span{
+            display: none;
+        }
+        i{
+            background: #212121;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .info-insertation .insert-content .traveler-forms{
+        margin-bottom: 50px;
+    }
+    .info-insertation .ensure-p{
+        margin-bottom: 45px;
+        margin-top: 25px;
+    }
+  .insert-content .collapse-opt .card{
+    padding-bottom: 20px;
+    border-top: none;
+  }
+    //--search-result------
+    .filtration{
+        display: none;
+    }
+    .calendar-container{
+        margin-top: 110px;
+        margin-left: 0;
+    }
+    .temp{
+        .sort{
+            display: flex;
+          justify-content: space-around;
+        }
+    }
+    .flights_result{
+        margin-left: 0;
+        padding-left: 0;
+        .flight .flight_content {
+            .trip{
+                width: 100%;
+            }
+            .book{
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+    }
+  .open-btn{
+    display: block;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .main {
+        .api {
+            //border: none;
+            width: 40rem;
+            &:before {
+                //display: none;
+            }
+            .btn {
+
+            }
+        }
+    }
+    //--------news-letter,footer---------
+   footer{
+       text-align: center;
+       padding-top: 2.375rem;
+       padding-bottom: 1.375rem;
+       a, p{
+           font-size: 14px;
+       }
+       img{
+           margin-top: 2rem;
+           margin-bottom: 0.5rem;
+       }
+       .socila_media{
+           margin-left: 120px;
+           float: unset;
+       }
+       .copyrights{
+           padding-top: 1.25rem;
+           margin-top: 1.375rem;
+       }
+   }
+    footer .socila_media a{
+        height: 2rem;
+        width: 2rem;
+        line-height: 2rem;
+    }
+    .newsletter{
+        padding-top: 3.375rem!important;
+        padding-bottom: 3.375rem;
+    }
+    //---internals--
+    .internals-height {
+        height: 18.375rem;
+    }
+    .internals-address {
+        font-size: 2rem;
+    }
+    .city_page {
+        margin-bottom: 40px;
+    }
+    //--about-us--------
+    .our-vission {
+        article {
+            margin-bottom: 40px;
+        }
+    }
+    .travel_services {
+        padding-top: 0 !important;
+        .visa {
+            margin-bottom: 40px;
+        }
+    }
+    .reasons {
+        padding-top: 0 !important;
+    }
+    //--city-us--------
+    .city_page_head .container h1, .discover-proceed-head h1{
+        margin: 6rem auto 2rem;
+        font-size: 1.5rem;
+    }
+    .city_page_head .container p, .discover-proceed-head p{
+        margin: 1rem auto;
+        font-size: 14px;
+        max-height: 65px;
+    }
+    .city_page_head .container .flight-search, .discover-proceed-head .flight-search{
+        bottom: 115px;
+    }
+    .city_page_head .container button, .discover-proceed-head button{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .city_page {
+        article {
+            margin-bottom: 40px;
+        }
+    }
+    //--terms-of-use---
+    .terms-of-use-content {
+        .single-term {
+            h2{
+                font-size: 1.4rem;
+            }
+            article{
+                font-size: 0.75rem;
+            }
+        }
+    }
+    //--forgot-password------
+    .forgot-password{
+        width: 100%;
+        input{
+            width: 90%;
+        }
+    }
+    //--thank-you------
+    .thank-you-align .thank-you-wrap {
+        .float-bio{
+            float: unset;
+            width: auto;
+        }
+        .approved-payment{
+            max-width: 360px;
+            display: block;
+            margin: 42px auto 0;
+            position: unset;
+            box-shadow: 0 0 85px 5px rgba(0, 0, 0, 0.2);
+            transform: unset;
+        }
+    }
+    .con-with-us{
+        display: none;
+    }
+    .con-with-us-res{
+        display: block!important;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        padding-top: 10px;
+        margin-top: 25px;
+        p{
+            color: #333;
+            font-size: 0.75rem;
+            margin: 0;
+            a{
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    }
+    //--profile-------
+    .profile-page .content .tab-content .security input{
+        width: 75%;
+    }
+  .card .card-header .btn span{
+    font-size: 13px;
+    width: 95%;
+    overflow: hidden;
+  }
+    //--main_info-------
+    .main_info{
+        display: block;
+        top: calc(100% - 14rem);
+        > div{
+            height: 7rem;
+            padding: 1.4rem!important;
+            p{
+                font-size: 1.7rem;
+            }
+            span{
+                font-size: 1rem;
+            }
+          &:not(:last-child){
+            border-bottom: 2px solid #111;
+          }
+        }
+    }
+    .main_info_res{
+        div:first-child{
+            p{
+                display: inline-block;
+                margin-bottom: 0!important;
+                &:not(:first-child){
+                    margin-#{$left}: 40px;
+                    position: relative;
+                    &:after{
+                        content: '\f338';
+                        font-family: "Font Awesome 5 Free";
+                        position: absolute;
+                        left: -30px;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    //.main_info > div:last-child{
+    //    background-color: #212121;
+    //}
+
+    .profile-page .main_info > div:last-child{
+        background-color: #111;
+    }
+
+    .insert-sty .flight-direction div::before{
+        display: none;
+    }
+    .insert-sty .flight-direction div p:first-child::before, .insert-sty .flight-direction div p:last-child::before{
+        display: none;
+    }
+    //--search-result------
+    .flights_result .flight .flight_content .trip{
+        position: relative;
+        .trip_times{
+            display: block;
+        }
+        .duration{
+            display: block;
+            width: 50%;
+            position: absolute;
+            bottom: 35%;
+            right: 0;
+            text-align: right;
+        }
+        .pieces{
+            display: block;
+            width: 50%;
+            position: absolute;
+            bottom: 15%;
+            right: 0;
+            text-align: right;
+        }
+    }
+    .flights_result .flight .flight_content .trip .airports .seats i{
+        //margin: 1.5rem 2rem 0;
+      margin: 0.95rem 2rem 0;
+    }
+    .flights_result .flight .flight_content .trip .trip_times > i{
+        margin: 0;
+        transform: rotateZ(90deg);
+    }
+  .insert-content .collapse-opt .card{
+    .flights_result .flight .flight_content .trip .airports .seats i{
+      margin: 2.3rem 1rem 0 1.5rem;
+    }
+  }
+  .profile-page .main_info p{
+    font-size: 1rem;
+  }
+  .profile-page .main_info{
+    top: calc(100% - 7rem);
+  }
+  .profile-page .main_info p:last-child{
+    margin-top: 0;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    //--------news-letter,footer---------
+    .newsletter{
+        i{
+            font-size: 1rem;
+        }
+        input{
+            //width: calc(100% - 7rem);
+            &::placeholder{
+                font-size: 0.775rem;
+            }
+        }
+        .icon_btn{
+            font-size: 0.775rem;
+        }
+    }
+    footer .socila_media{
+        margin-left: 80px;
+    }
+
+    //---internals--
+    .internals-address{
+        font-size: 1.7rem;
+    }
+    //--about-us--------
+    .city_page {
+        .city-para{
+            margin-top: 40px;
+            margin-bottom: 0;
+            font-size: 0.775rem;
+        }
+    }
+    .our-vission{
+        h4{
+            font-size: 1.3rem;
+        }
+        article{
+            font-size: 14px;
+        }
+    }
+    .travel_services{
+        .details{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    //--city-us--------
+    .city_page_head {
+        height: 20.375rem;
+    }
+    .city_page_head .container h1, .discover-proceed-head h1{
+        margin: 4rem auto 1rem;
+        font-size: 1rem;
+    }
+    .city_page_head .container p, .discover-proceed-head p{
+        margin: 0.8rem auto;
+        font-size: 12px;
+        max-height: 55px;
+    }
+    .city_page_head .container .flight-search, .discover-proceed-head .flight-search{
+        bottom: 90px;
+    }
+    .city_page_head .container button, .discover-proceed-head button{
+        padding: 10px;
+        font-size: 12px;
+
+    }
+
+    //--contact-us--------
+    .contact-us {
+        .single-contact {
+            h4{
+                font-size: $normalSize;
+            }
+            ul li{
+                font-size: 14px;
+            }
+        }
+    }
+    //--discover--------
+    .discover-wrap {
+        .places-pic-right{
+            .row{
+                max-height: max-content;
+                .place-bio{
+                    padding-left: 15px;
+                    margin: 0 15px;
+                    &:after{
+                        display: none;
+                    }
+                    h2{
+                        margin: 15px 0;
+                        font-size: 1.1rem;
+                    }
+                    p{
+                        line-height: unset;
+                    }
+                    button{
+                        margin-bottom: 1rem;
+                        position: unset;
+                        display: block;
+                        padding: 10px 20px;
+                    }
+                }
+                .place-pic{
+                    max-height: 280px;
+                    margin: 0 15px;
+                    padding-left: 15px;
+                    img{
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+    //--PROFILE--------
+    .sort .sort_item label, .sort .sort_item .nav-link{
+        padding: 0;
+        font-size: 0.65rem;
+    }
+    .profile-page .content .tab-content .security input{
+        width: 95%;
+    }
+    //--search-result--------
+    .flights_result .flight .flight_content .trip .airports{
+        padding-left: 2rem;
+        margin-bottom: 30px;
+        display: block;
+        position: relative;
+        &:before{
+            content: ' ';
+            width: 2px;
+            height: 65px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:after{
+            content: "\f072";
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .from_to{
+            position: relative;
+            &:after{
+                content: ' ';
+                width: 15px;
+                height: 15px;
+                background-color: #fff;
+                position: absolute;
+                left: -38px;
+                top: 16px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .flights_result .flight .flight_content .trip .trip_times{
+        margin-left: 2rem;
+    }
+    .flights_result .flight .flight_content .trip .duration{
+        bottom: 35%;
+    }
+    .flights_result .flight .flight_content .trip .pieces{
+        bottom: 11%;
+    }
+    .flights_result .flight .flight_content .trip .airports .from_to:first-child{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .flights_result .flight .flight_content .trip .airports .from_to:last-child{
+        margin-left: 0;
+    }
+    .flights_result .flight .flight_content .trip .airports .from_to > p{
+        margin: 0;
+    }
+    .flights_result .flight .flight_content .trip .airports .seats{
+        display: none;
+    }
+  .sort i{
+    font-size: 1.5rem;
+  }
+  .sort p{
+    font-size: 9px;
+  }
+}
+
+// Extra Small devices (portrait phones, less than 470px)
+@media (max-width: 470px) {
+    //--------news-letter,footer---------
+    .newsletter{
+        i{
+            font-size: 0.95rem;
+        }
+        input{
+            &::placeholder{
+                font-size: 0.65rem;
+            }
+        }
+        .icon_btn{
+            font-size: 0.65rem;
+        }
+    }
+
+    //--forgot-password------
+    .forgot-password{
+        input{
+            width: 100%;
+        }
+    }
+    //--thank-you-----
+    .thank-you-align .thank-you-wrap .approved-payment{
+        min-width: auto;
+    }
+    .thank-you-align .thank-you-wrap .float-bio .thank-you-bio h1{
+        font-size: 1.75rem;
+    }
+    //--PROFILE--------
+    .sort .sort_item label, .sort .sort_item .nav-link{
+        font-size: 0.55rem;
+    }
+}
+
+// Extra Small devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+    //--thank-you-----
+    .thank-you-align .thank-you-wrap{
+        padding: 1.5rem;
+    }
+    .thank-you-align .thank-you-wrap .float-bio .thank-you-bio h1{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .thank-you-align .thank-you-wrap .approved-payment{
+        margin: 25px auto 0;
+    }
+    //--PROFILE--------
+    .sort .sort_item label, .sort .sort_item .nav-link{
+        font-size: 0.5rem;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,26 @@
+@import "_variables";
+@import "_mixins";
+@import "_partials";
+@import "_grid";
+@import "_animation";
+@import "_general";
+@import "_header-footer";
+@import "_api";
+@import "_main";
+@import "_responsive";
+
+///////////////////////////////////////////////
+
+/* english fonts */
+// section heading
+//body & titles
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/HelveticaNeueLTStd-Ex.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueLTStd-Ex.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Ex.eot') ;
+    font-weight: normal;
+    font-style: normal;
+}
+

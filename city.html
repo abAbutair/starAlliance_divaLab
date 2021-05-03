@@ -1,0 +1,539 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- IE compatipility Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Resposive Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- keywords Meta-->
+    <meta name="keywords" content="">
+
+    <!-- description Meta-->
+    <meta name="description" content="">
+
+    <!--Author Meta-->
+    <meta name="author" content="Diva-lab">
+    <!--
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.datePicker.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style_ltr.css">
+
+
+    <title>star alliance tour</title>
+    <link rel="icon" href="images/"/>
+</head>
+
+<body>
+<header class="auto_hide">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-capitalize" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index2.html"  data-type="page-transition">flights <span class="sr-only">
+                            (current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">my booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">my account</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="lang">En</span>|<span class="currency text-uppercase">Egp</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<main class="temp">
+    <!-- bannar -->
+    <section class="city_img city_page_head insert-sty filter-mr-remove" style="background-image: url('media/city_bannar.jpg')">
+        <div class="container">
+            <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <div class="flight-search">
+                <button class="btn mr-right" type="button" data-target="#api_modal" data-toggle="modal">
+                    <i class="fas fa-plane awesome-rotate"></i>search flight
+                </button>
+                <button class="btn" type="button">
+                    <i class="far fa-building"></i>search hotels
+                </button>
+            </div>
+        </div><!-- / end contianer -->
+    </section>
+    <!-- / end bannar section -->
+
+    <div class="content city_page">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-10 col-md-9">
+                    <p class="city-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled .</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9">
+                    <div class="city-img">
+                        <img src="images/trip-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3 class="city-head">Lorem Ipsum - is simply dummy</h3>
+                    <article class="city-article">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="city-head">Lorem Ipsum - is simply dummy</h3>
+                    <article class="city-article">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </article>
+                </div>
+            </div>
+        </div><!-- / container -->
+    </div><!-- /content -->
+
+
+    <!-- Button trigger modal -->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+    </button>-->
+
+
+    <!-- ************************************************* -->
+    <!-- newsletters -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="line">
+                        <i class="far fa-envelope"></i>
+                        <input type="text" class="" placeholder="Subscribe to newsletter to keep up to date">
+                        <button class="btn icon_btn" type="button">
+                            <i class="fab fa-telegram-plane"></i> Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="f_nav list-unstyled text-capitalize">
+                        <li>
+                            <a href="#">about us</a>
+                        </li>
+                        <li>
+                            <a href="#">contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">rewards</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/logo.png" alt="">
+                    <ul class="list-inline list-unstyled socila_media">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-google-plus-g"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyrights text-center">
+                    <p>Copyright © 2018 | Star Alliance Tour<br>
+                        Powered By <a href=""> Diva-lab </a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!-- --------------------------------------------- -->
+<!-- multi-cities-flight modal -->
+<div class="modal modify_search" id="api_modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="api flights">
+                <div id="flights" class="apiContent">
+                    <div class="flight_tybe text-capitalize">
+                        <div class="radio inline">
+                            <input id="oneWay" type="radio" name="flightType" value="" checked>
+                            <label for="oneWay">one way</label>
+                        </div>
+                        <div class="radio inline">
+                            <input id="round" type="radio" name="flightType" value="">
+                            <label for="round">round</label>
+                        </div>
+                        <div class="radio inline">
+                            <input id="multiCity" type="radio" name="flightType" value="">
+                            <label for="multiCity" data-type="modal-trigger"  data-toggle="modal" data-target="#multi-flights">multi city </label>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <!-- oneWay flight -->
+                        <form class="oneWay-flight" data-type="oneWay">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="from"/>
+                                <span class="focusBorder"></span>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="where to"/>
+                                <span class="focusBorder"></span>
+                            </div>
+                            <div class="form-group dates">
+                                <label>
+                                    <input id="departDate" class="form-control single_date" type="text" value=""
+                                           placeholder="Depart"/>
+                                    <span class="focusBorder"></span>
+                                    <span class="icon">
+                                        <i class="fas fa-angle-up d-block"></i>
+                                        <i class="fas fa-angle-down d-block"></i>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-group passengers d-flex justify-content-between text-left">
+                                <div class="col adults">
+                                    <label class="text-capitalize d-block">
+                                        adults <small>(12+ yrs)</small>
+                                    </label>
+                                    <button class="plus btn" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="1" disabled>
+                                </div>
+                                <div class="col children">
+                                    <label class="text-capitalize d-block">
+                                        children <small>(2-12 yrs)</small>
+                                    </label>
+                                    <button class="plus btn" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="0" disabled>
+                                </div>
+                                <div class="col infants">
+                                    <label class="text-capitalize d-block">
+                                        infants <small>(under 2 yrs)</small>
+                                    </label>
+                                    <button class="plus btn stop" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn stop" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="0" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group class">
+                                <label class="text-capitalize">class</label>
+                                <div class="d-flex justify-content-between">
+                                    <div class="radio">
+                                        <input id="oneWay-economy" type="radio" name="oneWayClass" value="" checked>
+                                        <label for="oneWay-economy" class=" inline"> Economy </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="oneWay-business" type="radio" name="oneWayClass" value="">
+                                        <label for="oneWay-business" class=" inline">Business</label>
+                                    </div>
+                                    <div class="radio ">
+                                        <input id="oneWay-first" type="radio" name="oneWayClass" value="">
+                                        <label for="oneWay-first" class=" inline"> first </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group checkboxes">
+                                <div class="d-sm-flex justify-content-between">
+                                    <div class="check">
+                                        <input id="oneWay-direct" type="checkbox">
+                                        <label for="oneWay-direct" class=" inline"> Direct Flight Only </label>
+                                    </div>
+                                    <div class="check">
+                                        <input id="oneWay-nearby" type="checkbox">
+                                        <label for="oneWay-nearby" class=" inline"> Include nearby airport  </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn searchBtn">
+                                <span>search</span>
+                            </button>
+                        </form><!-- / end oneway flight form -->
+                        <!-- --------------------------------------------- -->
+                        <!-- round-flight -->
+                        <form class="round-flight" data-type="round">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="from" value=""/>
+                                <span class="focusBorder"></span>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="where to"/>
+                                <span class="focusBorder"></span>
+                            </div>
+                            <div class="form-group dates">
+                                <label>
+                                    <input class="form-control rangeFrom" type="text" value=""
+                                           placeholder="Depart"/>
+                                    <span class="focusBorder"></span>
+                                    <span class="icon">
+                                    <i class="fas fa-angle-up d-block"></i>
+                                    <i class="fas fa-angle-down d-block"></i>
+                                </span>
+                                </label>
+                                <label>
+                                    <input class="form-control rangeTo" type="text" value="" placeholder="Return"/>
+                                    <span class="focusBorder"></span>
+                                    <span class="icon">
+                                    <i class="fas fa-angle-up d-block"></i>
+                                    <i class="fas fa-angle-down d-block"></i>
+                                </span>
+                                </label>
+                            </div>
+                            <div class="form-group passengers d-flex justify-content-between text-left">
+                                <div class="col adults">
+                                    <label class="text-capitalize d-block">
+                                        adults <small>(12+ yrs)</small>
+                                    </label>
+                                    <button class="plus btn" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn " type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="1" disabled>
+                                </div>
+                                <div class="col children">
+                                    <label class="text-capitalize d-block">
+                                        children <small>(2-12 yrs)</small>
+                                    </label>
+                                    <button class="plus btn" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="0" disabled>
+                                </div>
+                                <div class="col infants">
+                                    <label class="text-capitalize d-block">
+                                        infants <small>(under 2 yrs)</small>
+                                    </label>
+                                    <button class="plus btn stop" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn stop" type="button" ><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="0" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group class">
+                                <label class="text-capitalize">class</label>
+                                <div class="d-sm-flex justify-content-between">
+                                    <div class="radio">
+                                        <input id="round-economy" type="radio" name="returnClass" value="" checked>
+                                        <label for="round-economy" class=" inline"> Economy </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="round-business" type="radio" name="returnClass" value="">
+                                        <label for="round-business" class=" inline">Business</label>
+                                    </div>
+                                    <div class="radio ">
+                                        <input id="round-first" type="radio" name="roundClass" value="">
+                                        <label for="round-first" class=" inline"> first </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group checkboxes">
+                                <div class="d-sm-flex justify-content-between">
+                                    <div class="check">
+                                        <input id="round-direct" type="checkbox">
+                                        <label for="round-direct" class=" inline"> Direct Flight Only </label>
+                                    </div>
+                                    <div class="check">
+                                        <input id="round-nearby" type="checkbox">
+                                        <label for="round-nearby" class=" inline"> Include nearby airport  </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn searchBtn">
+                                <span>search</span>
+                            </button>
+                        </form><!-- end return-flight -->
+                        <!-- --------------------------------------------- -->
+                        <!-- multicity flight -->
+                        <form class="multi-flight" data-type="multiCity">
+                            <div class="flight_rsnge">
+                                <div class="dates">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="from"/>
+                                        <span class="focusBorder"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="where to"/>
+                                        <span class="focusBorder"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input class="form-control single_date" type="text" value=""
+                                                   placeholder="Depart"/>
+                                            <span class="focusBorder"></span>
+                                            <span class="icon">
+                                            <i class="fas fa-angle-up d-block"></i>
+                                            <i class="fas fa-angle-down d-block"></i>
+                                        </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="sel sel--black-panther">
+                                            <select>
+                                                <option value="economy">Economy</option>
+                                                <option value="business">Business</option>
+                                                <option value="first">First</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn removeBtn"><i class="fas fa-times"></i> Remove</button>
+                                </div>
+                                <div class="dates">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="from"/>
+                                        <span class="focusBorder"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="where to"/>
+                                        <span class="focusBorder"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input class="form-control single_date" type="text" value=""
+                                                   placeholder="Depart"/>
+                                            <span class="focusBorder"></span>
+                                            <span class="icon">
+                                            <i class="fas fa-angle-up d-block"></i>
+                                            <i class="fas fa-angle-down d-block"></i>
+                                        </span>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="sel sel--black-panther">
+                                            <select>
+                                                <option value="economy">Economy</option>
+                                                <option value="business">Business</option>
+                                                <option value="first">First</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn removeBtn"><i class="fas fa-times"></i> Remove</button>
+                                </div>
+                            </div> <!-- flight range -->
+                            <div class="form-group">
+                                <span class="add  " onclick="addFlight()">
+                                    <i class="fa fa-plus"></i> Add flight
+                                </span>
+                            </div>
+                            <div class="form-group passengers d-flex justify-content-between text-left">
+                                <div class="col adults">
+                                    <label class="text-capitalize d-block">
+                                        adults <small>(12+ yrs)</small>
+                                    </label>
+                                    <button class="plus btn" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="1" disabled>
+                                </div>
+                                <div class="col children">
+                                    <label class="text-capitalize d-block">
+                                        children <small>(2-12 yrs)</small>
+                                    </label>
+                                    <button class="plus btn" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="0" disabled>
+                                </div>
+                                <div class="col infants">
+                                    <label class="text-capitalize d-block">
+                                        infants <small>(under 2 yrs)</small>
+                                    </label>
+                                    <button class="plus btn stop" type="button"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="minus btn stop" type="button"><i class="fas fa-minus-circle"></i></button>
+                                    <input type="text" value="0" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group class">
+                                <label class="text-capitalize">class</label>
+                                <div class="d-flex justify-content-between">
+                                    <div class="radio">
+                                        <input id="multi-economy" type="radio" name="multiClass" value="" checked>
+                                        <label for="multi-economy" class=" inline"> Economy </label>
+                                    </div>
+                                    <div class="radio">
+                                        <input id="multi-business" type="radio" name="multiClass" value="">
+                                        <label for="multi-business" class=" inline">Business</label>
+                                    </div>
+                                    <div class="radio ">
+                                        <input id="multi-first" type="radio" name="multiClass" value="">
+                                        <label for="multi-first" class=" inline"> first </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn searchBtn">
+                                <span>search</span>
+                            </button>
+                        </form><!-- end return-flight -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div role="button" class="close_modal"><img src="images/cd-icon-close.svg"></div>
+</div>
+
+
+<!-- ****** JavaScript ****** -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment-with-locales.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/jquery.datePicker.js"></script>
+
+<script type="text/javascript" src="js/rangeslider.js"></script>
+
+<script src="js/auto-hide.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>
